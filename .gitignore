@@ -1,2 +1,4 @@
 wikienv
 __pycache__
+.env
+testing.py
