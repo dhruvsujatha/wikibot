@@ -1,9 +1,4 @@
 import wikipedia as wp
+import ssis
 
-try:
-    a = wp.page("Wikipedia")
-    print(a.images[0])
-except:
-    print("oops")
-# print(a.images[0])
-
+print(ssis.wikiSearch("Wikipedia")['result'][1])

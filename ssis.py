@@ -19,7 +19,7 @@ def wikiSearch(keyword, noOfResults = 5):
         return {"search": False, "suggest": True, "summary": False, "image": False, "result": [suggestResult]}
     else: 
         loweredCase = list(map(lambda x: x.lower(), searchResult))
-        if keyword in loweredCase:
+        if keyword.lower() in loweredCase:
             summaryResult = wikiSummary(keyword)
             try: 
                 imageResult = wikiImage(keyword)
